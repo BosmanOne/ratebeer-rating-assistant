@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<head>	
+ 	<title>RateBeer rating assistant</title>
+ 	<meta name="author" content="Bartosz Chrząszczak">
+ 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slider.css">
+	
+	
+	<script src="javascript/jquery-3.1.1.min.js"></script>
+	<script src="javascript/main.js"></script>
+	<script src="javascript/slider.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div>
+			<h1 style="text-align: center">RateBeer rating assistant</h1>
+		</div>
+		<div id ="aroma-circle" class="whole-circle">
+			<ul class="circle">
+				<li class="circle-one"><div class="slice15 other"> <span class="text">DMS - CORN</span> </div></li>
+				<li class="circle-one"><div class="slice15 other"> <span class="text">DIACETYL</span> </div></li>
+				<li class="circle-one"><div class="slice15 other"> <span class="text">SULPHURIC</span> </div></li>
+				<li class="circle-one"><div class="slice15 other"> <span class="text">SKUNKED</span> </div></li>
+				<li class="circle-one"><div class="slice15 other"> <span class="text">BARREL OAK</span> </div></li>
+				<li class="circle-one"><div class="slice15 other"> <span class="text">BARREL CASK FEEL</span> </div></li>
+
+				<li class="circle-one"><div class="slice9 yeast"> <span class="text">CLEAN</span> </div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">SPICY</span></div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">ESTER BUBBLEGUM</span></div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">BANANA</span></div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">CLOVE</span></div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">BARNYARD</span></div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">FUNKY</span></div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">WILD</span></div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">TRADITIONAL</span></div></li>
+				<li class="circle-one"><div class="slice9 yeast"><span class="text">ALCOHOL</span></div></li>
+
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">BURNT</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">ASH</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">SMOKED</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">WHEAT</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">PRUNES</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">CANDI</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">DARK CHOCOLATE</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">MILK CHOCOLATE</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">RAISINS</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">NUTTY</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">CARAMEL</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">TOASTY</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">HONEY</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">PALE</span></div></li>
+				<li class="circle-one"><div class="slice6 malt"><span class="text text-rotated">BISCUIT</span></div></li>
+
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">HERBAL</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">GRASSY</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">MEADOW FLORAL</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">NOBLE</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">WOODY</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">LEMON GRASS</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">TROPICAL FRUIT</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">PUNGENT</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">SPICY PEPPERY</span></div></li>
+				<li class="circle-one"><div class="slice9 hops"><span class="text text-rotated">GRAPE SKIN</span></div></li>
+
+				<ul class='small-circle small-circle-one'>
+					<li class='inner inner-other'><div class="slice90 other"><span class="text-inner">OTHER</span></div></li>
+					<li class='inner inner-yeast'><div class="slice90 yeast"><span class="text-inner">YEAST</span></div></li>
+					<li class='inner inner-malt'><div class="slice90 malt"><span class="text-inner text-inner-rotated">MALT</span></div></li>
+					<li class='inner inner-hops'><div class="slice90 hops"><span class="text-inner text-inner-rotated">HOPS</span></div></li>
+				</ul>
+			</ul>
+		</div>
+
+
+		<div id ="appearance-circle" class="whole-circle" style="display: none ">
+			<ul class="circle">
+				<li class="circle-two"><div class="slice12 head"> <span class="text">NONE</span> </div></li>
+				<li class="circle-two"><div class="slice12 head"> <span class="text">SMALL</span> </div></li>
+				<li class="circle-two"><div class="slice12 head"> <span class="text">MEDIUM</span> </div></li>
+				<li class="circle-two"><div class="slice12 head"> <span class="text">LARGE</span> </div></li>
+				<li class="circle-two"><div class="slice12 head"> <span class="text">GASHING</span> </div></li>
+				<li class="circle-two"><div class="slice12 head"> <span class="text">SHORT LIVED</span> </div></li>
+				<li class="circle-two"><div class="slice12 head"> <span class="text">LONG LASTING</span> </div></li>
+
+				<li class="circle-two"><div class="slice12 crown"><span class="text">LACE</span></div></li>
+				<li class="circle-two"><div class="slice12 crown"><span class="text">RINGS</span></div></li>
+				<li class="circle-two"><div class="slice12 crown"><span class="text">ROCKY</span></div></li>
+				<li class="circle-two"><div class="slice12 crown"><span class="text">CREAMY</span></div></li>
+
+				<li class="circle-two"><div class="slice12 shade"><span class="text">WHITE</span></div></li>
+				<li class="circle-two"><div class="slice12 shade"><span class="text">TANNED</span></div></li>
+				<li class="circle-two"><div class="slice12 shade"><span class="text">MOCHA</span></div></li>
+				<li class="circle-two"><div class="slice12 shade"><span class="text">PINK</span></div></li>
+
+				<li class="circle-two"><div class="slice12 opacity"><span class="text text-rotated">FLOATERS</span></div></li>
+				<li class="circle-two"><div class="slice12 opacity"><span class="text text-rotated">OPAQUE</span></div></li>
+				<li class="circle-two"><div class="slice12 opacity"><span class="text text-rotated">MURKY</span></div></li>
+				<li class="circle-two"><div class="slice12 opacity"><span class="text text-rotated">CLOUDY</span></div></li>
+				<li class="circle-two"><div class="slice12 opacity"><span class="text text-rotated">HAZY</span></div></li>
+				<li class="circle-two"><div class="slice12 opacity"><span class="text text-rotated">CLEAR</span></div></li>
+
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">PALE GOLD</span></div></li>
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">GOLD</span></div></li>
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">DEEP GOLD</span></div></li>
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">AMBER GOLD</span></div></li>
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">AMBER</span></div></li>
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">RED</span></div></li>
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">LIGHT-BROWN</span></div></li>
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">BROWN</span></div></li>
+				<li class="circle-two"><div class="slice12 body-colour"><span class="text text-rotated">BLACK</span></div></li>
+
+				<ul class="small-circle small-circle-two">
+					<li class='inner inner-head'><div class="slice84 head"><span class="text-inner">HEAD</span></div></li>
+					<li class='inner inner-crown'><div class="slice48 crown"><span class="text-inner">CROWN</span></div></li>
+					<li class='inner inner-shade'><div class="slice48 shade"><span class="text-inner">SHADE</span></div></li>
+					<li class='inner inner-opacity'><div class="slice72 opacity"><span class="text-inner text-inner-rotated">OPACITY</span></div></li>
+					<li class='inner inner-body-colour'><div class="slice108 body-colour"><span class="text-inner text-inner-rotated">BODY <br> COLOUR</span></div></li>
+				</ul>
+			</ul>
+		</div>
+
+
+		<div id ="palate-and-body-circle" class="whole-circle" style="display: none ">
+			<ul class="circle">
+				<li class="circle-three"><div class="slice12 body"> <span class="text">THIN</span> </div></li>
+				<li class="circle-three"><div class="slice12 body"> <span class="text">MILD</span> </div></li>
+				<li class="circle-three"><div class="slice12 body"> <span class="text">FULL</span> </div></li>
+
+				<li class="circle-three"><div class="slice12 texture"><span class="text">SOFT</span></div></li>
+				<li class="circle-three"><div class="slice12 texture"><span class="text">SMOOTH</span></div></li>
+				<li class="circle-three"><div class="slice12 texture"><span class="text">SIKLY</span></div></li>
+				<li class="circle-three"><div class="slice12 texture"><span class="text">CHEWY</span></div></li>
+				<li class="circle-three"><div class="slice12 texture"><span class="text">CREAMY</span></div></li>
+				<li class="circle-three"><div class="slice12 texture"><span class="text">VISCOUS</span></div></li>
+				<li class="circle-three"><div class="slice12 texture"><span class="text">DRY</span></div></li>
+
+				<li class="circle-three"><div class="slice12 carbonation"><span class="text">FLAT</span></div></li>
+				<li class="circle-three"><div class="slice12 carbonation"><span class="text">DELICATE</span></div></li>
+				<li class="circle-three"><div class="slice12 carbonation"><span class="text">SOFT</span></div></li>
+				<li class="circle-three"><div class="slice12 carbonation"><span class="text">AVERAGE</span></div></li>
+				<li class="circle-three"><div class="slice12 carbonation"><span class="text">FRISKY</span></div></li>
+
+				<li class="circle-three"><div class="slice14 intensity"><span class="text text-rotated">BOLD</span></div></li>
+				<li class="circle-three"><div class="slice14 intensity"><span class="text text-rotated">INTENSE</span></div></li>
+				<li class="circle-three"><div class="slice14 intensity"><span class="text text-rotated">AVERAGE</span></div></li>
+				<li class="circle-three"><div class="slice14 intensity"><span class="text text-rotated">MILD</span></div></li>
+				<li class="circle-three"><div class="slice16 intensity"><span class="text text-rotated">BLAND</span></div></li>
+
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">BLAND</span></div></li>
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">BALANCED</span></div></li>
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">COMPLEX</span></div></li>
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">MATURE</span></div></li>
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">ONESIDED</span></div></li>
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">ROUGH</span></div></li>
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">TRADITIONAL</span></div></li>
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">NEW WAVE</span></div></li>
+				<li class="circle-three"><div class="slice12 approach"><span class="text text-rotated">NEEDS WORK</span></div></li>
+
+				<ul class="small-circle small-circle-three">
+					<li class='inner inner-body'><div class="slice36 body"><span class="text-inner">BODY</span></div></li>
+					<li class='inner inner-texture'><div class="slice84 texture"><span class="text-inner">TEXTURE</span></div></li>
+					<li class='inner inner-carbonation'><div class="slice60 carbonation"><span class="text-inner">CARBNONATION</span></div></li>
+					<li class='inner inner-intensity'><div class="slice72 intensity"><span class="text-inner text-inner-rotated">INTENSITY</span></div></li>
+					<li class='inner inner-approach'><div class="slice108 approach"><span class="text-inner text-inner-rotated">APPROACH</span></div></li>
+				</ul>
+			</ul>
+		</div>
+
+		<div class="row">
+			<div id="categories-btn-group" class="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+				<div class="btn-group btn-group-justified" role="group" aria-label="...">
+					<div class="btn-group categories-btn" role="group">
+						<button type="button" id="aroma" class="btn btn-sm btn-selected">Aroma</button>
+					</div>
+					<div class="btn-group categories-btn" role="group">
+						<button type="button" id="appearance" class="btn btn-sm">Appearance</button>
+					</div>
+					<div class="btn-group categories-btn" role="group">
+						<button type="button" id="palate-and-body" class="btn btn-sm">Palate & Body</button>
+					</div>
+				</div>
+			</div>
+			<div id="rating-menu" class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+				<button type="button" id="btn-rating-menu" class="btn btn-default btn-block" value="hide/show">Rating menu</button>
+
+				<div id="ratings-container">
+					<div id="rating-aroma" class="rating-div">
+						<div class="rating-category">AROMA:</div>
+						<div class="rating-score"> 0/10 </div>
+						<div class="rating-slider-container">
+							<div class="rating-slider">
+								<input type='range' id='r1' class='tip' value='0' step='1' max='10' />
+							</div>
+						</div>
+					</div>
+
+					<div id="rating-appearance" class="rating-div">
+						<div class="rating-category">APPEARANCE:</div>
+						<div class="rating-score"> 0/5	</div>
+						<div class="rating-slider-container">
+							<div class="rating-slider">
+								<input type='range' id='r2' class='tip' value='0' step='1' max='5' />
+							</div>
+						</div>
+					</div>
+
+					<div id="rating-taste" class="rating-div">
+						<div class="rating-category">TASTE:</div>
+						<div class="rating-score"> 0/10 </div>
+						<div class="rating-slider-container">
+							<div class="rating-slider">
+								<input type='range' id='r3' class='tip' value='0' step='1' max='10' />
+							</div>
+						</div>
+					</div>
+
+					<div id="rating-palate" class="rating-div">
+						<div class="rating-category">PALATE:</div>
+						<div class="rating-score"> 0/5	</div>
+						<div class="rating-slider-container">
+							<div class="rating-slider">
+								<input type='range' id='r4' class='tip' value='0' step='1' max='5' />
+							</div>
+						</div>
+					</div>
+
+					<div id="rating-overall" class="rating-div">
+						<div class="rating-category">OVERALL:</div>
+						<div class="rating-score"> 0/20	</div>
+						<div class="rating-slider-container">
+							<div class="rating-slider">
+								<input type='range' id='r5' class='tip' value='0' step='1' max='20' />
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+				<div class="textarea-comment-container">
+					<textarea id="textarea-comment" class="form-control not-resizible" rows="3"></textarea>
+				</div>
+			</div>
+			
+			 <div class="col-sm-2 col-sm-offset-4 col-xs-3 col-xs-offset-3 no-padding">
+				<input id ="btn-copy" class="btn btn-default btn-block" type="button" onclick="btnCopy()" value="Copy">
+			</div>
+
+			<div class="col-sm-2 col-xs-3 no-padding">
+				<input id ="btn-reset" class="btn btn-default btn-block" type="button" onclick="btnReset()" value="Reset">
+			</div>
+
+		</div>
+	</div>	
+</body>
